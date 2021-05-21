@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: Android
+ Release: Working copy
+ Locale: en, English
+ Exported by: min li
+ Exported at: Thu, 29 Apr 2021 13:49:38 +0800
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="tlb_left_button_text">Back</string>
+    <string name="select_photos_pictures_new">Select from Album</string>
+    <string name="common_text_placeholder_percent_zero">0.00%</string>
+    <string name="select_photos_cancel">Cancel</string>
+    <string name="common_text_placeholder">--</string>
+    <string name="common_text_placeholder_percent">--%</string>
+    <string name="select_photos_camera_new">Take photo</string>
+    <string name="comm_network_invalid">No internet</string>
+    <string name="select_photos_camera">Take photo</string>
+    <string name="select_photos_pictures">Select from Album</string>
+    <string name="select_photos_pictures_default">From LongBridge Gallery</string>
+    <string name="common_Loading_progress">Loading…</string>
+</resources>

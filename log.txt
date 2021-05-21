@@ -1,0 +1,50 @@
+
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-zh-rHK :  警告：select_photos_pictures_new: 本地内容与下载不一致内容被修改: Download: 從照片庫選擇  Local: 從照片庫選擇
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-zh-rHK :  警告：select_photos_camera_new: 本地内容与下载不一致内容被修改: Download: 拍攝新照片  Local: 拍攝新照片
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-zh-rHK :  警告：comm_network_invalid: 本地内容与下载不一致内容被修改: Download: 暫無網絡  Local: 暫無網絡
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-zh-rHK :  警告：select_photos_pictures: 本地内容与下载不一致内容被修改: Download: 從手機相冊選擇  Local: 從手機相冊選擇
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-zh-rHK :  警告：select_photos_pictures_default: 本地内容与下载不一致内容被修改: Download: 圖庫選擇  Local: 圖庫選擇
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-zh-rHK :  警告：common_Loading_progress: 本地内容与下载不一致内容被修改: Download: 正在加載中…  Local: 正在加載中…
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：tlb_left_button_text: 本地内容与下载不一致内容被修改: Download: Back  Local: Back
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：select_photos_pictures_new: 本地内容与下载不一致内容被修改: Download: Select from Album  Local: Select from Album
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：select_photos_camera_new: 本地内容与下载不一致内容被修改: Download: Take photo  Local: Take photo
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：comm_network_invalid: 本地内容与下载不一致内容被修改: Download: No internet  Local: No internet
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：select_photos_camera: 本地内容与下载不一致内容被修改: Download: Take photo  Local: Take photo
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：select_photos_pictures: 本地内容与下载不一致内容被修改: Download: Select from Album  Local: Select from Album
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：select_photos_pictures_default: 本地内容与下载不一致内容被修改: Download: From LongBridge Gallery  Local: From LongBridge Gallery
+/Users/yaodonglv/IdeaProjects/loco/libstrings : values-en :  警告：common_Loading_progress: 本地内容与下载不一致内容被修改: Download: Loading…  Local: Loading…
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_lb_name_dev: 本地内容与下载不一致内容被修改: Download: 長橋(ts)  Local: 長橋(ts)
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_lb_name_pre: 本地内容与下载不一致内容被修改: Download: 長橋(ts)  Local: 長橋(ts)
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_srl_header_loading: 本地内容与下载不一致内容被修改: Download: 等待底部加載完成…  Local: 等待底部加載完成…
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_srl_header_failed: 本地内容与下载不一致内容被修改: Download: 刷新失敗  Local: 刷新失敗
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_srl_header_secondary: 本地内容与下载不一致内容被修改: Download: 釋放進入二樓  Local: 釋放進入二樓
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_lb_name_ts: 本地内容与下载不一致内容被修改: Download: 長橋(ts)  Local: 長橋(ts)
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_srl_footer_nothing: 本地内容与下载不一致内容被修改: Download: 沒有更多  Local: 沒有更多
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_lb_name: 本地内容与下载不一致内容被修改: Download: 長橋  Local: 長橋
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_srl_header_refreshing: 本地内容与下载不一致内容被修改: Download: 正在刷新數據中…  Local: 正在刷新數據中…
+/Users/yaodonglv/IdeaProjects/loco/app : values-zh-rHK :  警告：app_srl_header_release: 本地内容与下载不一致内容被修改: Download: 鬆開立即刷新  Local: 鬆開立即刷新
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：activity_main_exit: 本地内容与下载不一致内容被修改: Download: Click again to exit App  Local: Click again to exit App
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_lb_name_dev: 本地内容与下载不一致内容被修改: Download: LongBridge(dev)  Local: LongBridge(dev)
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_update: 本地内容与下载不一致内容被修改: Download: Last Update M-d HH:mm  Local: Last Update M-d HH:mm
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_lb_name_pre: 本地内容与下载不一致内容被修改: Download: LongBridge(pre)  Local: LongBridge(pre)
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：order_point_tip: 本地内容与下载不一致内容被修改: Download: %s x %s Shares  Local: %s x %s Shares
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_loading: 本地内容与下载不一致内容被修改: Download: Wait For Loading…  Local: Wait For Loading…
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_finish: 本地内容与下载不一致内容被修改: Download: Refresh Success  Local: Refresh Success
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_failed: 本地内容与下载不一致内容被修改: Download: Refresh Failed  Local: Refresh Failed
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_pulling: 本地内容与下载不一致内容被修改: Download: Pull Down To Refresh  Local: Pull Down To Refresh
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_secondary: 本地内容与下载不一致内容被修改: Download: Release To Second Floor  Local: Release To Second Floor
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_lb_name_ts: 本地内容与下载不一致内容被修改: Download: LongBridge(ts)  Local: LongBridge(ts)
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_footer_nothing: 本地内容与下载不一致内容被修改: Download: No More Data  Local: No More Data
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_lb_name: 本地内容与下载不一致内容被修改: Download: LongBridge  Local: LongBridge
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_refreshing: 本地内容与下载不一致内容被修改: Download: Refreshing…  Local: Refreshing…
+/Users/yaodonglv/IdeaProjects/loco/app : values-en :  警告：app_srl_header_release: 本地内容与下载不一致内容被修改: Download: Release To Refresh  Local: Release To Refresh
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-zh-rHK :  警告：wealth_today_income_tip_area_hk: 本地内容与下载不一致内容被修改: Download: 相對於昨天收盤之後，當日股票成交時的盈虧總計，該值在特殊情況下可能出現誤差，僅供參考。該值不作爲賬戶資產的清算與結算依據。我們不會根據此數據對資產進行計增或計減。但無論準確與否均不影響資產安全性。最終盈虧情況，請以實際交割單、對賬單的數據爲準。\n\n港股日切點爲交易日北京時間的 9:00。  Local: 相對於昨天收盤之後，當日股票成交時的盈虧總計，該值在特殊情況下可能出現誤差，僅供參考。該值不作爲賬戶資產的清算與結算依據。我們不會根據此數據對資產進行計增或計減。但無論準確與否均不影響資產安全性。最終盈虧情況，請以實際交割單、對賬單的數據爲準。\n\n港股日切點爲交易日北京時間的 9:00。
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-zh-rHK :  警告：market_fund_convert_into_estimate: 本地内容与下载不一致内容被修改: Download: (折合，預估)  Local: (折合，預估)
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-zh-rHK :  警告：market_repeat_order_freeze_tip: 本地内容与下载不一致内容被修改: Download: 打算使用長期有效訂單的投資者應注意以下事項：\n1. 市場條件可能發生變化，因此可能對該訂單造成不利影響，請密切關注股票價格變動。\n2. 長橋證券不保證每次下單成功，可能會因爲您的賬戶資金情況導致購買力不足無法下單，也有可能因爲內部或外部系統原因下單失敗。\n3. 建議打開 App 訂單推送通知，獲取最新訂單更新消息。 請確認您充分了解該功能可能帶來的交易風險。  Local: 打算使用長期有效訂單的投資者應注意以下事項：\n1. 市場條件可能發生變化，因此可能對該訂單造成不利影響，請密切關注股票價格變動。\n2. 長橋證券不保證每次下單成功，可能會因爲您的賬戶資金情況導致購買力不足無法下單，也有可能因爲內部或外部系統原因下單失敗。\n3. 建議打開 App 訂單推送通知，獲取最新訂單更新消息。 請確認您充分了解該功能可能帶來的交易風險。
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-zh-rHK :  警告：market_industry_revenue_growth_rate_distribute: 本地内容与下载不一致内容被修改: Download: 營收增長率分佈  Local: 營收增長率分佈
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-zh-rHK :  警告：half_warehose: 本地内容与下载不一致内容被修改: Download: 1/2 倉  Local: 1/2 倉
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-en :  警告：wealth_today_income_tip_area_hk: 本地内容与下载不一致内容被修改: Download: P/L for today′s order as compared to previous day′s closing price.For reference only,might differ from the actual figure.Not reliable for trade settlement.Actual P/L refer to figures computed in daily contract notes.\n\nThe daily dividing point of the Hong Kong stock market is 9:00 Beijing time on the trading day.  Local: P/L for today′s order as compared to previous day′s closing price.For reference only,might differ from the actual figure.Not reliable for trade settlement.Actual P/L refer to figures computed in daily contract notes.\n\nThe daily dividing point of the Hong Kong stock market is 9:00 Beijing time on the trading day.
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-en :  警告：market_fund_convert_into_estimate: 本地内容与下载不一致内容被修改: Download: (based, est.)  Local: (based, est.)
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-en :  警告：market_repeat_order_freeze_tip: 本地内容与下载不一致内容被修改: Download: Risks associated with using Long-term order\n1. As the order is left\nactivated for a period of time, market conditions could change and the order may become unfavorable.\n2.\nLongBridge does not guarantee the successfulness of recurring submission. Subject to account balance (which\ncould be affected by other transactions) upon recurring submission and other risks associated with \'Electronic\nTrading\'.\n3. It is recommended to turn on App Push Notification to get notified of the latest status of your\norders.\nPlease ensure you fully understand and accept the risk associated with using the recurring orders.\n  Local: Risks associated with using Long-term order\n1. As the order is left\nactivated for a period of time, market conditions could change and the order may become unfavorable.\n2.\nLongBridge does not guarantee the successfulness of recurring submission. Subject to account balance (which\ncould be affected by other transactions) upon recurring submission and other risks associated with \'Electronic\nTrading\'.\n3. It is recommended to turn on App Push Notification to get notified of the latest status of your\norders.\nPlease ensure you fully understand and accept the risk associated with using the recurring orders.\n
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-en :  警告：market_industry_revenue_growth_rate_distribute: 本地内容与下载不一致内容被修改: Download: Sales Distributed  Local: Sales Distributed
+/Users/yaodonglv/IdeaProjects/loco/libcommon : values-en :  警告：half_warehose: 本地内容与下载不一致内容被修改: Download: 1/2  Local: 1/2

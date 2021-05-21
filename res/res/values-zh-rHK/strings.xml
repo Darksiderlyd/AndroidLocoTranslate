@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 更新时间: 2021-05-20 10:23:47 -->
+<resources>
+    <string name="tlb_left_button_text">返回</string>
+    <string name="select_photos_pictures_new">從照片庫選擇</string>
+    <string name="common_text_placeholder_percent_zero">0.00%</string>
+    <string name="common_text_placeholder">--</string>
+    <string name="common_text_placeholder_percent">--%</string>
+    <string name="select_photos_camera_new">拍攝新照片</string>
+    <string name="comm_network_invalid">暫無網絡</string>
+    <string name="select_photos_camera">拍照</string>
+    <string name="select_photos_pictures">從手機相冊選擇</string>
+    <string name="select_photos_pictures_default">圖庫選擇</string>
+    <string name="common_Loading_progress">正在加載中…</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_lb_name">11212</string>
+    <string name="app_lb_name_dev">11212</string>
+    <string name="app_lb_name_ts">11212</string>
+    <string name="app_lb_name_pre">11212</string>
+    <string name="activity_main_exit">11212</string>
+
+    <string name="app_srl_header_pulling">11212</string>
+    <string name="app_srl_header_release">11212</string>
+    <string name="app_srl_header_refreshing">11212</string>
+    <string name="app_srl_header_loading">11212</string>
+    <string name="app_srl_header_finish">11212</string>
+    <string name="app_srl_header_failed">11212</string>
+    <string name="app_srl_header_update">11212</string>
+    <string name="app_srl_header_secondary">11212</string>
+    <string name="app_srl_footer_nothing">11212</string>
+
+</resources>

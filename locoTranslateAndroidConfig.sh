@@ -1,0 +1,1 @@
+python -B locoScripts/translateAndroidConfig.py

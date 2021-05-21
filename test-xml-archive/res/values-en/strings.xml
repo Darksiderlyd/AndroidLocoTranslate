@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: test
+ Release: Working copy
+ Locale: en, English
+ Exported by: min li
+ Exported at: Fri, 30 Apr 2021 17:38:48 +0800
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="tlb_left_button_text">12312</string>
+    <string name="select_photos_pictures_new"></string>
+    <string name="common_text_placeholder_percent_zero"></string>
+    <string name="common_text_placeholder">123123</string>
+    <string name="common_text_placeholder_percent"></string>
+    <string name="select_photos_camera_new"></string>
+    <string name="comm_network_invalid"></string>
+    <string name="select_photos_camera"></string>
+    <string name="half_warehose"></string>
+    <string name="wealth_today_income_tip_area_hk">adsfdsfa</string>
+    <string name="select_photos_pictures"></string>
+    <string name="select_photos_pictures_default"></string>
+    <string name="common_Loading_progress"></string>
+    <string name="market_industry_revenue_growth_rate_distribute"></string>
+</resources>

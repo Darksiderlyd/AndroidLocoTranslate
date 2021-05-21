@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 更新时间: 2021-05-20 10:23:47 -->
+<resources>
+    <string name="tlb_left_button_text">Back</string>
+    <string name="select_photos_pictures_new">Select from Album</string>
+    <string name="common_text_placeholder_percent_zero">0.00%</string>
+    <string name="common_text_placeholder">--</string>
+    <string name="common_text_placeholder_percent">--%</string>
+    <string name="select_photos_camera_new">Take photo</string>
+    <string name="comm_network_invalid">No internet</string>
+    <string name="select_photos_camera">Take photo</string>
+    <string name="select_photos_pictures">Select from Album</string>
+    <string name="select_photos_pictures_default">From LongBridge Gallery</string>
+    <string name="common_Loading_progress">Loading…</string>
+</resources>

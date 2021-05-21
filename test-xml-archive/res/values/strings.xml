@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: test
+ Release: Working copy
+ Locale: zh-CN, Chinese (China)
+ Exported by: min li
+ Exported at: Fri, 30 Apr 2021 17:38:48 +0800
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="tlb_left_button_text">返回</string>
+    <string name="select_photos_pictures_new">从照片库选择</string>
+    <string name="common_text_placeholder_percent_zero">0.00%</string>
+    <string name="common_text_placeholder">--</string>
+    <string name="common_text_placeholder_percent">--%</string>
+    <string name="select_photos_camera_new">拍摄新照片</string>
+    <string name="comm_network_invalid">暂无网络</string>
+    <string name="select_photos_camera">拍照</string>
+    <string name="half_warehose">1/2 仓</string>
+    <string name="wealth_today_income_tip_area_hk">相对于昨天收盘之后，当日股票成交时的盈亏总计，该值在特殊情况下可能出现误差，仅供参考。该值不作为账户资产的清算与结算依据。我们不会根据此数据对资产进行计增或计减。但无论准确与否均不影响资产安全性。最终盈亏情况，请以实际交割单、对账单的数据为准。\\n\\n港股日切点为交易日北京时间的 9:00。</string>
+    <string name="select_photos_pictures">从手机相册选择</string>
+    <string name="select_photos_pictures_default">图库选择</string>
+    <string name="common_Loading_progress">正在加载中…</string>
+    <string name="market_industry_revenue_growth_rate_distribute">营收增长率分布</string>
+</resources>
