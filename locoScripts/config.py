@@ -7,7 +7,8 @@ dirNeedUpdateValuesList = ['values-zh-rHK', 'values-en']
 dirValuesList = ['values', 'values-zh-rHK', 'values-en']
 
 # 对应替换符号表
-symbolTable = {'\\u0020': ' ', '\\\\\"': '\\\"', '\\\\\'': '\\\'', '\\\\n': '\\n', '<': '&#060;', '&': "&#038;",
+symbolTable = {'\\u0020': ' ', '\\\\\"': '\\\"', '\\\\\'': '\\\'', '\\\\t': '\\t', '\\\\n': '\\n', '<': '&#060;',
+               '&': "&#038;",
                '\\\\': '\\'}
 
 allUpdate = False
@@ -26,9 +27,8 @@ locoWriteAppkey = "JRSm2-TsPDLFQbWkgTG06ksW0Nq9Dpgzh"
 updatedSynchLocal = ['zh-CN', 'zh-HK']
 
 switchAutoUpdate = False
+switchChangeAndAddUpdate = False
 
-# 增量更新同时同步到local
-updatedSynchLocalHansCNAndroidKey = 'zh-Hans-CN'
 updatedSynchLocalCn = 'zh-CN'
 updatedSynchLocalEN = 'en'
 # 增量更新是否同时翻译繁体 (香港)
@@ -76,6 +76,9 @@ map = [
 replaceValueMap = {
     '{{$NULL$}}': "",  # 空字符串
 }
+
+# 增量更新同时同步到local
+updatedSynchLocalHansCNAndroidKey = 'zh-Hans-CN'
 
 ################### 迁移已完成 ###################
 # #GoogleDocs 用于迁移翻译

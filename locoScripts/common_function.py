@@ -12,6 +12,7 @@ import zipfile
 import distutils.dir_util
 import shutil
 import opencc
+import ssl
 
 import xml.etree.cElementTree as etXmlParser
 
@@ -394,6 +395,42 @@ def downloadStringsDispatchStringToModuleWhiteList():
         f_log.close()
         f.close()
 
+    except Exception as e:
+        print("(失败)"), e
+        return e
+
+
+def downloadStringsZipReturnMap(valuesDirName=None):
+    if valuesDirName is None:
+        return None
+
+    print("正在下载所有翻译文档Zip ... ")
+    url = 'https://localise.biz:443/api/export/archive/xml.zip?format=android&key=' + config.locoReadonlyAppKey
+    loco_base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(loco_base_dir)
+    file_name = loco_base_dir + "/strings.zip"
+
+    plusMap = {}
+    try:
+        f = urllib2.urlopen(url).read()
+        open(file_name, 'wb').write(f)
+        # 解压
+        # if os.path.exists(file_name):
+        zip_file = zipfile.ZipFile(file_name, "r")
+        zip_list = zip_file.namelist()  # 压缩文件清单，可以直接看到压缩包内的各个文件的明细
+        for f in zip_list:  # 遍历这些文件，逐个解压出来，
+            zip_file.extract(f, loco_base_dir)
+        zip_file.close()
+        archiveDir = os.path.join(loco_base_dir, config.archiveFileName)
+        downloadStringsDir = os.path.join(archiveDir, "res")
+        libstringsResDir = os.path.join(base_dir, config.pathDestRes)
+
+        # localAllMap = fetch_localized_string_from_all_path(valuesDirName)
+
+        resDir = os.path.join(downloadStringsDir, valuesDirName, "strings.xml")
+        print resDir
+        downloadAllMap = fetch_download_localized_string(resDir)
+        return downloadAllMap
     except Exception as e:
         print("(失败)"), e
         return e
@@ -798,12 +835,12 @@ def parseXmlTree(path=None):
 
 
 if __name__ == '__main__':
-    inFile = '/Users/yaodonglv/IdeaProjects/loco/toolsloco/updateStrings.xml'
-    outFile = '/Users/yaodonglv/IdeaProjects/loco/toolsloco/output.xml'
-
-    xmlTree = parseXmlTree(inFile)
-    xmlTree.write(outFile, "utf-8", True)
-
+    # inFile = '/Users/yaodonglv/IdeaProjects/loco/toolsloco/updateStrings.xml'
+    # outFile = '/Users/yaodonglv/IdeaProjects/loco/toolsloco/output.xml'
+    #
+    # xmlTree = parseXmlTree(inFile)
+    # xmlTree.write(outFile, "utf-8", True)
+    downloadStringsZipReturnMap(config.dirValuesZHName)
     # translateCHS2CHT()
 
     # print converter.convert('%s x %s 股')  # 漢字
