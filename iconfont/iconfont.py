@@ -88,8 +88,9 @@ import com.mikepenz.iconics.typeface.GenericFont;
 */
 public class IconFont {
 
-    public static String version = "${iconFontVersion}";
-
+    public static String VERSION = "${iconFontVersion}";
+    public static String PREFIX = "${prefix_lb}_";
+    
     public static void initIconFont() {
         GenericFont gf = new GenericFont("IconFont", "LongBridge", "${prefix_lb}", "fonts/iconfont.ttf");
         addIcon(gf);
