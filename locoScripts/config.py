@@ -9,7 +9,7 @@ dirValuesList = ['values', 'values-zh-rHK', 'values-en']
 # 对应替换符号表
 symbolTable = {'\\u0020': ' ', '\\\\\"': '\\\"', '\\\\\'': '\\\'', '\\\\t': '\\t', '\\\\n': '\\n', '<': '&#060;',
                '&': "&#038;",
-               '\\\\': '\\'}
+               '\\\\': '\\', '爲': '為'}
 
 allUpdate = False
 # archiveFileName = "test-xml-archive"
