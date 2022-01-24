@@ -102,47 +102,5 @@ def fetch_local_translatable_string(path=None):
 
     return totalList
 
-
-# 根据ModuleName获取文案
-def fetch_localized_string_from_all_path_by_module(moduleName=None, dirName=None):
-    if moduleName == None or dirName == None:
-        return {}
-    dirPaths = fetch_all_modules_dirPaths_by_whitelist()
-    print("all Dirs:"), dirPaths
-    totalDict = fatch_localized_string_form_dirPaths_android(dirPaths, dirName)
-    log = "localized string count:{}".format(len(totalDict))
-    print log
-    return totalDict
-
-
-# 获取Android目录下所有本地Key
-def fatch_localized_string_form_dirPaths_android(dirPaths=None, stringFile=None):
-    if (len(dirPaths) <= 0):
-        print("error: not dirPaths")
-        return {}
-    totalList = {}
-    for dirname in dirPaths:
-        path = dirname + '/src/main/res/' + stringFile + '/strings.xml'  # 先写死
-        print path
-        if not os.path.exists(path):
-            continue
-        xmldoc = xml.dom.minidom.parse(path)
-
-        stringNodes = xmldoc.getElementsByTagName('string')
-        for node in stringNodes:
-            for item in node.childNodes:
-                key = node.getAttribute('name')
-                # print key
-                value = item.data
-                totalList[key.decode('UTF-8')] = value.decode('UTF-8')
-
-    for blackKey in config.keyBlackList:
-        if blackKey in totalList:
-            totalList.pop(blackKey)
-
-    return totalList
-
-
 if __name__ == '__main__':
-    # fetch_all_modules_dirPaths_by_whitelist()
     downloadStringsDispatchStringToModuleWhiteList()
