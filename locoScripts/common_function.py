@@ -168,6 +168,7 @@ def fatch_localized_string_form_dirPaths_android(dirPaths=None, stringFile=None)
         print("error: not dirPaths")
         return {}
     totalList = {}
+    totalUnTranslatable = {}
     for dirname in dirPaths:
         path = dirname + '/src/main/res/' + stringFile + '/strings.xml'  # 先写死
         print path
@@ -178,10 +179,17 @@ def fatch_localized_string_form_dirPaths_android(dirPaths=None, stringFile=None)
         stringNodes = xmldoc.getElementsByTagName('string')
         for node in stringNodes:
             for item in node.childNodes:
+                translatable = node.getAttribute('translatable')
+
                 key = node.getAttribute('name')
-                # print key
                 value = item.data
-                totalList[key.decode('UTF-8')] = value.decode('UTF-8')
+
+                if translatable is None or len(translatable) == 0 or translatable == "true":
+                    totalList[key.decode('UTF-8')] = value.decode('UTF-8')
+                else:
+                    totalUnTranslatable[key.decode('UTF-8')] = value.decode('UTF-8')
+                    print "UnTranslatable: [key: value] ==> [" + key.decode('UTF-8') + ": " + value.decode(
+                        'UTF-8') + "]"
 
     for blackKey in config.keyBlackList:
         if blackKey in totalList:
@@ -194,14 +202,21 @@ def fetch_download_localized_string(path=None):
     if path is {}:
         return {}
     totalList = {}
+    totalUnTranslatable = {}
     xmldoc = xml.dom.minidom.parse(path)
     stringNodes = xmldoc.getElementsByTagName('string')
     for node in stringNodes:
         for item in node.childNodes:
+            translatable = node.getAttribute('translatable')
+
             key = node.getAttribute('name')
-            # print key
             value = item.data
-            totalList[key.decode('UTF-8')] = value.decode('UTF-8')
+
+            if translatable is None or len(translatable) == 0 or translatable == "true":
+                totalList[key.decode('UTF-8')] = value.decode('UTF-8')
+            else:
+                totalUnTranslatable[key.decode('UTF-8')] = value.decode('UTF-8')
+                print "UnTranslatable: [key: value] ==> [" + key.decode('UTF-8') + ": " + value.decode('UTF-8') + "]"
 
     for blackKey in config.keyBlackList:
         if blackKey in totalList:

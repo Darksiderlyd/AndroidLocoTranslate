@@ -51,6 +51,9 @@ def downloadStringsDispatchStringToModuleWhiteList():
 
             loglines.append("</resources>\n\n")
 
+            for line in loglines:
+                print line
+
             f_log.writelines(loglines)
 
         f_log.close()

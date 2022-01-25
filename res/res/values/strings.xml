@@ -7,8 +7,8 @@
     <string name="common_text_placeholder_percent">--%</string>
     <string name="select_photos_camera_new">拍摄新照片</string>
     <string name="comm_network_invalid">暂无网络</string>
-    <string name="select_photos_camera">拍照</string>
-    <string name="select_photos_pictures">从手机相册选择</string>
+    <string name="select_photos_camera">拍照,,</string>
+    <string name="select_photos_pictures">从手机相册选择,,</string>
     <string name="select_photos_pictures_default">图库选择</string>
     <string name="common_Loading_progress">正在加载中…</string>
 </resources>

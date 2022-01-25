@@ -17,12 +17,12 @@ archiveFileName = "android-xml-archive"
 
 # localise app key
 # 正式
-locoReadonlyAppKey = "Abq2xeDHXn3MQfUTzz0EzI1tpzwQIyH3"  # 正式
+locoReadonlyAppKey = "hlGu7P4ThJWrzPf5YZaB6HKXDvwqxeuh_"  # 正式
 # locoWriteAppkey = "JRSm2-TsPDLFQbWkgTG06ksW0Nq9Dpgzh"
 
 # 测试
 # locoReadonlyAppKey = "GPQkaKWNfDXSjbklMng5Kg8mLVVDzp4t"
-locoWriteAppkey = "JRSm2-TsPDLFQbWkgTG06ksW0Nq9Dpgzh"
+locoWriteAppkey = "hlGu7P4ThJWrzPf5YZaB6HKXDvwqxeuh_"
 
 updatedSynchLocal = ['zh-CN', 'zh-HK']
 

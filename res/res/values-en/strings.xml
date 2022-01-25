@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 更新时间: 2021-05-26 20:37:52 -->
+<!-- 更新时间: 2022-01-25 16:52:26 -->
 <resources>
     <string name="tlb_left_button_text">Back</string>
     <string name="select_photos_pictures_new">Select from Album</string>
@@ -10,6 +10,6 @@
     <string name="comm_network_invalid">No internet</string>
     <string name="select_photos_camera">Take photo</string>
     <string name="select_photos_pictures">Select from Album</string>
-    <string name="select_photos_pictures_default">From LongBridge Gallery</string>
+    <string name="select_photos_pictures_default">From Longbridge Gallery</string>
     <string name="common_Loading_progress">Loading…</string>
 </resources>
