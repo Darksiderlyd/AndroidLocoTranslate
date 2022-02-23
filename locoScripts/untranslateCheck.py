@@ -22,6 +22,8 @@ def downloadStringsDispatchStringToModuleWhiteList():
         checkTime = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         f_log.write("<!-- 检测时间: " + checkTime + " -->\n")
 
+        hasUntranslatableStr = False
+
         for modulePath in fetch_all_modules_dirPaths_by_whitelist():
             # print "module: " + modulePath
             localZHStringsResFile = os.path.join(modulePath, config.pathDestRes, config.dirValuesZHName, 'strings.xml')
@@ -48,7 +50,7 @@ def downloadStringsDispatchStringToModuleWhiteList():
                         recordHadWriteStringKeys.append(localKey)
                         loglines.append(
                             "    <string name=\"" + localKey + "\">" + localStringMap[localKey] + "</string>\n")
-
+                        hasUntranslatableStr = True
             loglines.append("</resources>\n\n")
 
             for line in loglines:
@@ -57,6 +59,9 @@ def downloadStringsDispatchStringToModuleWhiteList():
             f_log.writelines(loglines)
 
         f_log.close()
+
+        if hasUntranslatableStr:
+            raise Exception("有未翻译的参数!", "查看未翻译日志进行修改！")
 
     except Exception as e:
         print("(失败)"), e
