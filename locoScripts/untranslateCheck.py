@@ -4,6 +4,7 @@ import sys
 import time
 import config
 import xml.dom.minidom
+import xml.etree.cElementTree as etXmlParser
 
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -37,13 +38,18 @@ def downloadStringsDispatchStringToModuleWhiteList():
 
             loglines.append("<!-- " + moduleNames[len(moduleNames) - 1] + " -->\n")
             loglines.append("<resources>\n")
-            for resValuesDir in config.dirNeedUpdateValuesList:
+            for resValuesDir in config.dirValuesList:
 
                 localNotZHStringsResFile = os.path.join(base_dir, modulePath, config.pathDestRes, resValuesDir,
                                                         'strings.xml')
                 localNotCnStringMap = fetch_local_translatable_string(localNotZHStringsResFile)
 
+
                 for localKey in localStringMap:
+
+                    if resValuesDir == "values" and localKey == "app_name":
+                        print localNotCnStringMap[localKey]
+
                     if localKey not in config.keyBlackList and localKey not in recordHadWriteStringKeys and (
                             localKey not in localNotCnStringMap or localNotCnStringMap[localKey] is None or len(
                         localNotCnStringMap[localKey]) <= 0):
@@ -51,6 +57,7 @@ def downloadStringsDispatchStringToModuleWhiteList():
                         loglines.append(
                             "    <string name=\"" + localKey + "\">" + localStringMap[localKey] + "</string>\n")
                         hasUntranslatableStr = True
+
             loglines.append("</resources>\n\n")
 
             for line in loglines:
@@ -61,7 +68,9 @@ def downloadStringsDispatchStringToModuleWhiteList():
         f_log.close()
 
         if hasUntranslatableStr:
-            raise Exception("有未翻译的参数!", "查看未翻译日志进行修改！")
+            print "FOUND_UNTRANSLATABLE_STING"
+        else:
+            print "NOT_FOUND_UNTRANSLATABLE_STING"
 
     except Exception as e:
         print("(失败)"), e
@@ -88,21 +97,41 @@ def fetch_local_translatable_string(path=None):
     if path is {}:
         return {}
     totalList = {}
+    # print 'path: ' + path
     totalUnTranslatable = {}
-    xmldoc = xml.dom.minidom.parse(path)
-    stringNodes = xmldoc.getElementsByTagName('string')
-    for node in stringNodes:
-        for item in node.childNodes:
-            translatable = node.getAttribute('translatable')
 
-            key = node.getAttribute('name')
-            value = item.data
+    xmlTree = etXmlParser.parse(path)
+    root = xmlTree.getroot()
+    for item in root.findall('string'):  # 找到root节点下的所有string节点
+        key = item.get('name')  # 子节点string下属性name的值
+        value = item.text  # 子节点string的值
+        translatable = item.get('translatable')
+        # print key,value,translatable
 
-            if translatable is None or len(translatable) == 0 or translatable == "true":
+        if translatable is None or len(translatable) == 0 or translatable == "true":
+            if value is not None:
                 totalList[key.decode('UTF-8')] = value.decode('UTF-8')
             else:
-                totalUnTranslatable[key.decode('UTF-8')] = value.decode('UTF-8')
-                print "UnTranslatable: [key: value] ==> [" + key.decode('UTF-8') + ": " + value.decode('UTF-8') + "]"
+                totalList[key.decode('UTF-8')] = ""
+        else:
+            totalUnTranslatable[key.decode('UTF-8')] = value.decode('UTF-8')
+            print "UnTranslatable: [key: value] ==> [" + key.decode('UTF-8') + ": " + value.decode('UTF-8') + "]"
+
+
+    # xmldoc = xml.dom.minidom.parse(path)
+    # stringNodes = xmldoc.getElementsByTagName('string')
+    # for node in stringNodes:
+    #     for item in node.childNodes:
+    #         translatable = node.getAttribute('translatable')
+    #
+    #         key = node.getAttribute('name')
+    #         value = item.data
+    #
+    #         if translatable is None or len(translatable) == 0 or translatable == "true":
+    #             totalList[key.decode('UTF-8')] = value.decode('UTF-8')
+    #         else:
+    #             totalUnTranslatable[key.decode('UTF-8')] = value.decode('UTF-8')
+    #             print "UnTranslatable: [key: value] ==> [" + key.decode('UTF-8') + ": " + value.decode('UTF-8') + "]"
 
     for blackKey in config.keyBlackList:
         if blackKey in totalList:
@@ -110,5 +139,17 @@ def fetch_local_translatable_string(path=None):
 
     return totalList
 
+def parseXmlTree(path=None):
+    if path is None:
+        return None
+    xmlTree = etXmlParser.parse(path)
+    root = xmlTree.getroot()
+    for string in root.findall('string'):  # 找到root节点下的所有string节点
+        name = string.get('name')  # 子节点string下属性name的值
+        value = string.text  # 子节点string的值
+        print name, value
+    return xmlTree
+
 if __name__ == '__main__':
+    # parseXmlTree('/Users/yaodonglv/IdeaProjects/loco/app/src/main/res/values/strings.xml')
     downloadStringsDispatchStringToModuleWhiteList()
